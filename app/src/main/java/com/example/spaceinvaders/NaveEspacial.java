@@ -36,6 +36,7 @@ public class NaveEspacial {
             return;
         }
         numeroNaves--;
+
         Log.i("SpaceInvaders", "La nave "+this.nombre+" ha sido destruida.");
 
         if (numeroNaves<=0){
