@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         alfa.recibirImpacto();
         beta.recibirImpacto();
         beta.recibirImpacto();
+        alfa.recibirImpacto();
 
 
     }

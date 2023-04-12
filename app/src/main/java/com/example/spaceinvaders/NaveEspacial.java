@@ -21,15 +21,20 @@ public class NaveEspacial {
     }
 
     public void recibirImpacto(){
+        if (this.vida<=VIDAMIN){
+            return;
+        }
         this.vida-=DAMAGE;
         Log.i("SpaceInvaders", "La nave "+this.nombre+" ha recibido un impacto, le queda "+this.vida+" de vida.");
-
         if (this.vida<=VIDAMIN){
             destruirNave();
         }
     }
 
     private void destruirNave(){
+        if (numeroNaves<=0){
+            return;
+        }
         numeroNaves--;
         Log.i("SpaceInvaders", "La nave "+this.nombre+" ha sido destruida.");
 
